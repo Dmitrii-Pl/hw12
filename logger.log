@@ -1,0 +1,596 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 18:13:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 18:13:34] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 18:13:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 18:13:48] "GET /?s=asfdasf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 18:13:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 18:13:52] "GET /?s=asdf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 18:13:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:22:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:22:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\main\views.py", line 18, in search_page
+    posts = load_json_data("../posts.json")
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\main\utils.py", line 5, in load_json_data
+    with open(path, 'r', encoding="UTF-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '../posts.json'
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:22:11] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:root:Выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\main\views.py", line 18, in search_page
+    posts = load_json_data("posts.json")
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\main\utils.py", line 5, in load_json_data
+    with open(path, 'r', encoding="UTF-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '../posts.json'
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:25:55] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:root:Выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\main\views.py", line 18, in search_page
+    posts = load_json_data("posts.json")
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\main\utils.py", line 5, in load_json_data
+    with open(path, 'r', encoding="UTF-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '../posts.json'
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:26:09] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:root:Выполняется поиск
+ERROR:app:Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\main\views.py", line 18, in search_page
+    posts = load_json_data("posts.json")
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\main\utils.py", line 5, in load_json_data
+    with open(path, 'r', encoding="UTF-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: '../posts.json'
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:26:16] "[35m[1mGET /search?s=ага HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:26:47] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:26:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:27:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:27:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:27:27] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:27:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:29:47] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:29:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:29:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:29:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:31:50] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:31:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:31:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:31:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:32:02] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:32:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:22] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:24] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:27] "GET /search?s=ага HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:53] "GET /search?s=enhjv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:59] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 19:40:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:09:50] "GET /search?s=утром HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:09:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:09:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:09:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:09:58] "GET /search?s=s HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:09:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:10:00] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:10:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:10:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:10:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:10:47] "GET /search?s=Aran HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:10:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:10:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:10:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:11:28] "GET /search?s=dg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:11:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:11:31] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:11:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:11:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:11:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:11:55] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:11:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:23:24] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:23:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:23:27] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:23:28] "GET /post HTTP/1.1" 200 -
+INFO:root:Данные не загружены, отсутствует часть данных
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:23:59] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:24:07] "GET /post HTTP/1.1" 200 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'loader_blueprint.create_new_post_user' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:24:28] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 23, in create_new_post_user
+    picture.save(UPLOAD_FOLDER)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\werkzeug\datastructures.py", line 2999, in save
+    dst = open(dst, "wb")
+PermissionError: [Errno 13] Permission denied: 'uploads/images'
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:37:36] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 24, in create_new_post_user
+    picture.save(UPLOAD_FOLDER/{filename})
+TypeError: unsupported operand type(s) for /: 'str' and 'set'
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:46:15] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:49:31] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:49:52] "GET /post HTTP/1.1" 200 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:51:36] "GET /search?s=fg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:51:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:51:41] "GET /search?s=fg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:51:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:51:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:51:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:51:47] "GET /search?s=fg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 21:51:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:06:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:06:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:06:43] "GET /search?s=fg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:06:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:06:45] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:06:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:06] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:06] "GET /uploads/images/Снимок%20экрана%20(1).png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:09] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:16] "GET /search?s=fg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:35] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:53] "GET /search?s=кодим HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:53] "[36mGET /uploads/images/Снимок%20экрана%20(1).png HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:07:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:08:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:08:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:08:54] "GET /search?s=кодим HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:08:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:08:54] "[36mGET /uploads/images/Снимок%20экрана%20(1).png HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:15] "GET /search?s=новый HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:20] "GET /search?s=пост HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Выполняется поиск
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:33] "GET /search?s=ко HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:09:33] "[36mGET /uploads/images/Снимок%20экрана%20(1).png HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:12:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:12:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:12:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 22:12:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:10:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:10:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:10:38] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:10:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 25, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:11:03] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:32:42] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:32:48] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:33:12] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:33:15] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:37:10] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:root:Открытие главной страницы
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:37:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:37:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:37:17] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:37:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:37:35] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:44:06] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:44:11] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:49:27] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:49:31] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /post [POST]
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 29, in create_new_post_user
+    new_post = {"pic": save_picture(picture), "content": content}
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\utils.py", line 11, in save_picture
+    raise WrongImgType(f"Неверный формат файла! Допустимы только {', '.join(allowed_type)}")
+exceptions.WrongImgType: Неверный формат файла! Допустимы только png, gif, jpeg, jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\plesh\PycharmProjects\pythonProject6\loader\views.py", line 31, in create_new_post_user
+    abort(400)
+TypeError: nt.abort() takes no arguments (1 given)
+INFO:werkzeug:127.0.0.1 - - [19/May/2022 23:49:50] "[35m[1mPOST /post HTTP/1.1[0m" 500 -
